@@ -37,6 +37,10 @@ export  default class Server
             socket.mensaje(cliente, this.io);
                 //Para q se deconecte 
             socket.desconectar(cliente);
+            
+            socket.configurarUsuario(cliente, this.io);
+        
+        
         });
 
     }

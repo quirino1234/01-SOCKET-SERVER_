@@ -16,3 +16,13 @@ export const mensaje = (cliente:Socket, io: socketIO.Server)=>{
 
     })
 }
+
+export const configurarUsuario = (cliente:Socket, io: socketIO.Server)=>{
+    cliente.on('configurar-usuario', (payload:{nombre: string}) => {
+       
+        console.log('Bienvenido usuario',payload.nombre);
+
+       
+
+    })
+}
