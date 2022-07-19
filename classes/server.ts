@@ -13,6 +13,7 @@ export  default class Server
 
     public io: socketIO.Server;
     private httpServer: http.Server;
+    static instance: any;
 
     constructor(){
         this.app = express();
