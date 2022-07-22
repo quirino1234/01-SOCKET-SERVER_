@@ -11,6 +11,7 @@ server.app.use(bodyParser.json());
 
 //cors
 server.app.use(cors({origin:true, credentials: true}));
+
 server.app.use('/',router)
 
 server.start(()=>{
