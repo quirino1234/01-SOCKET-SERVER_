@@ -87,10 +87,6 @@ router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
 
     
 });
-
-
-
-
 export default router;
 
 
